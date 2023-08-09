@@ -1,0 +1,6 @@
+fibonacci <- c(0, 1)
+for (i in 3:10) {
+  next_fibonacci <- fibonacci[i - 1] + fibonacci[i - 2]
+  fibonacci <- c(fibonacci, next_fibonacci)
+}
+cat("First 10 Fibonacci numbers:", fibonacci, "\n")
